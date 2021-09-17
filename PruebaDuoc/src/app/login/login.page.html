@@ -1,0 +1,27 @@
+<ion-header>
+  <ion-toolbar color="warning">
+    <ion-title>Login</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content >
+
+
+  <form  >
+  
+    <ion-item >
+      <ion-label>Usuario</ion-label>
+      <ion-input type="text" #u > <ion-icon name="person-circle-outline"></ion-icon></ion-input>
+    </ion-item>
+    <ion-item >
+      <ion-label>Contraseña</ion-label>
+      <ion-input type="password" #p ><ion-icon name="lock-closed-outline"></ion-icon></ion-input>
+    </ion-item>
+    <ion-button color="dark"  (click)="onClick(u,p)" expand="block" shape="round" > iniciar sesion</ion-button>
+
+  </form>
+
+
+
+
+</ion-content>
